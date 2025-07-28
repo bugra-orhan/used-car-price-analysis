@@ -75,9 +75,6 @@ for i, col in enumerate(categorical_cols_clean):
 plt.tight_layout()
 plt.show()
 
-
-
-
 # 3-d) Create the barplot for monthly sales and lineplot for production year of cars. 
 df['period'] = pd.to_datetime(df['period'], format='%Y-%m', errors='coerce')
 df_period = df.dropna(subset=['period'])
